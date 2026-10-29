@@ -1,0 +1,94 @@
+h1 {
+    font-family: 'Courier New', cursive;
+    color: skyblue;
+    font-size: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0px 0px 8px skyblue;
+}
+
+.subtitle {
+    font-family: 'Impact', sans-serif;
+    color: skyblue;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0px 0px 5px skyblue;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    align-items: center;
+}
+
+#pixel-grid {
+    width: 500px;
+    height: 500px;
+    border: 1px solid skyblue;
+    ;
+    display: grid;
+    grid-template-columns: repeat(25, 1fr);
+    grid-template-rows: repeat(25, 1fr);
+    background-color: white;
+}
+
+#pixel-grid:hover {
+    cursor: crosshair;
+}
+
+.pixel {
+    width: 100%;
+    height: 100%;
+}
+
+label {
+    color: white;
+    font-family: 'Courier New', cursive;
+    margin-right: 10px;
+}
+
+#colorDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#colorPicker {
+    border: 0.1px solid white;
+}
+
+button {
+    border: 2px solid white;
+    background: radial-gradient(circle, grey 0%, black 100%);
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+    transition: transform 0.2s ease;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5)
+}
+
+button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.85);
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.eraser-button {
+    margin-left: 40px;
+}
